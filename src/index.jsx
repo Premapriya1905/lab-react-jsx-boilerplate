@@ -1,14 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-// import AppClass from "./AppClass";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+import ImageData from './Components/Datacomponent.jsx'
+import AppClass from './AppClass';
 
+const image = ImageData()
+console.log(image)
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />   
-    {/* change the above line - for interchaning between App and AppClass */}
-  </React.StrictMode>
-);
+    <AppClass imageprop = {image}></AppClass>
+  </React.StrictMode>,
+)
