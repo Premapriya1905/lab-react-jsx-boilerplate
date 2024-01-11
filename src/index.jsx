@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import ImageData from './Components/Datacomponent.jsx'
+import ImageData from './Components/DataCnpmomponent.jsx'
 import AppClass from './AppClass';
 
 const image = ImageData()
